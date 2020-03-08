@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-5-8 11:24:41 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.mingrisoft.bean.GoodDetails" table="GOODDETAILS">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="nowPrice" type="double">
+            <column name="NOWPRICE" />
+        </property>
+        <property name="oldPrice" type="double">
+            <column name="OLDPRICE" />
+        </property>
+        <property name="imageUrls" type="org.hibernate.type.TextType">
+            <column name="IMAGEURLS" />
+        </property>
+        <property name="merchant" type="java.lang.String">
+            <column name="MERCHANT" />
+        </property>
+        <property name="prompt" type="java.lang.String">
+            <column name="PROMPT" />
+        </property>
+        <property name="introduction" type="org.hibernate.type.TextType">
+            <column name="INTRODUCTION" />
+        </property>
+        <property name="brand" type="java.lang.String">
+            <column name="BRAND" />
+        </property>
+        <property name="comment" type="int">
+            <column name="COMMENT" />
+        </property>
+    </class>
+</hibernate-mapping>
